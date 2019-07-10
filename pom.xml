@@ -1,10 +1,42 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
-http://maven.apache.org/maven-v4_0_0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <groupId>com.codecheck.devcloud</groupId>
-    <artifactId>HelloBug</artifactId>
-    <version>1.0-SNAPSHOT</version>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.huawei.demo</groupId>
+  <artifactId>javaMavenDemo</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0</version>
+  <name>maven_demo</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+    <groupId>junit</groupId>
+    <artifactId>junit</artifactId>
+    <version>3.8.1</version>
+    <scope>test</scope>
+    </dependency>
+  </dependencies>
+   
+   
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>  
+          <groupId>org.apache.maven.plugins</groupId>  
+          <artifactId>maven-jar-plugin</artifactId>  
+          <version>2.6</version>  
+          <configuration>  
+            <archive>  
+              <manifest>  
+                <addClasspath>true</addClasspath>  
+              </manifest>  
+              <manifestEntries>  
+                <Main-Class>  
+                  HelloWorld
+                </Main-Class>  
+              </manifestEntries>  
+            </archive>  
+          </configuration>  
+        </plugin> 
+      </plugins>
+    </pluginManagement>
+  </build>
 </project>
