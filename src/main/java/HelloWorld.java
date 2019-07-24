@@ -36,6 +36,40 @@ public class HelloWorld {
             dummy();
         }
     }
+    
+    void mayLeakResource() throws IOException {
+        OutputStream stream = Resources.allocateResource();
+        if (stream == null) {
+          return;
+        }
+
+        try {
+          stream.write(12);
+        } finally {
+          // FIXME: should close the stream
+        }
+    }
+
+  /**
+   * This method should be rewritten with nested try { ... } finally { ... } statements, or the
+   * possible exception raised by fis.close() should be swallowed.
+   */
+    void twoResources() throws IOException {
+        FileInputStream fis = null;
+        FileOutputStream fos = null;
+        try {
+            fis = new FileInputStream(new File("whatever.txt"));
+            fos = new FileOutputStream(new File("everwhat.txt"));
+            fos.write(fis.read());
+        } finally {
+            if (fis != null) {
+                fis.close();
+        }
+            if (fos != null) {
+                fos.close();
+            }
+        }
+     }
 
     public static void main(String[] args) {
         System.out.println("Hello World!");
