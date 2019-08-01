@@ -15,7 +15,7 @@ strategy:
   maxParallel: 2
 
 pool:
-  vmImage: windows
+  vmImage: ubuntu-16.04
 
 steps:
 - task: Maven@3
