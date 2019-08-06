@@ -23,4 +23,3 @@ steps:
     checkStyleRunAnalysis: true
     pmdRunAnalysis: true
     findBugsRunAnalysis: true
-    goals: 'pacakge'
