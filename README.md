@@ -1,0 +1,1 @@
+[![Code Health](https://alpha.devcloud.inhuawei.com/codecheck/v1/codecheck/task/codehealth.svg?taskId=eb1698a942834b5eb24f7ee3e6bbfaf4)](https://alpha.devcloud.inhuawei.com/codecheck/project/f43e138c6af94ff38a458e8425563a8c/codecheck/task/eb1698a942834b5eb24f7ee3e6bbfaf4/detail)
