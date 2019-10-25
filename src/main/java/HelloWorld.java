@@ -36,7 +36,7 @@ public class HelloWorld {
         System.out.println(s.length()); // defect 3
     }
 
-    void reverseInferNPE(String s){
+    void reverseInferNPE(String s, String t){
         System.out.println(s.length()); // defect 4
         if (s != null){
             dummy();
