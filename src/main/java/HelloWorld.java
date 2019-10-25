@@ -29,7 +29,7 @@ public class HelloWorld {
         System.out.println(s.length()); // defect 2
     }
 
-    void forwardInferNPE(String s){
+    void forwardInferNPE(String s, String t){
         if (s != null){
             dummy();
         }
