@@ -9,6 +9,8 @@ public class HelloWorld {
   void dummy() {
     // do nothing here
   }
+  
+  void DummY(){}
 
   void doesNotCauseNPE() {
     Pointers.A a = Pointers.mayReturnNull(10);
