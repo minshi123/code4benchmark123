@@ -9,6 +9,11 @@ public class HelloWorld {
   void dummy() {
     // do nothing here
   }
+  
+ void s(){
+   Strings = null;
+   System.out.println(s.length());
+ }
 
   void doesNotCauseNPE() {
     Pointers.A a = Pointers.mayReturnNull(10);
