@@ -24,6 +24,11 @@ public class HelloWorld {
     String s = null;
     System.out.println(s.length()); // defect 2
   }
+  
+  void alwaysCauseNPE2() {
+    String s = null;
+    System.out.println(s.length()); // defect 2
+  }
 
   void forwardInferNPE(String s) {
     if (s != null) {
