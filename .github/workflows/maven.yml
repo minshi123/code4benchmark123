@@ -22,5 +22,5 @@ jobs:
         java-version: 1.8
     - name: Build with Maven
       run: mvn -B package --file pom.xml
-    - name: Google Java Format
-      uses: axel-op/googlejavaformat-action@v2.0.0
+#     - name: Google Java Format
+#       uses: axel-op/googlejavaformat-action@v2.0.0
