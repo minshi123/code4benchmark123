@@ -13,6 +13,8 @@ public class HelloWorld {
   void doesNotCauseNPE() {
     Pointers.A a = Pointers.mayReturnNull(10);
     a.method(); // ok
+    
+    
   }
 
   void mayCauseNPE() {
