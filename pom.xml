@@ -6,6 +6,7 @@
   <version>1.0</version>
   <name>maven_demo</name>
   <url>http://maven.apache.org</url>
+  
   <dependencies>
     <dependency>
     <groupId>junit</groupId>
