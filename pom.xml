@@ -19,6 +19,8 @@
     <sonar.projectKey>dreaminplus_code4benchmark2</sonar.projectKey>
     <sonar.organization>dreaminplus</sonar.organization>
     <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
   <build>
     <pluginManagement>
@@ -43,4 +45,5 @@
       </plugins>
     </pluginManagement>
   </build>
+  
 </project>
