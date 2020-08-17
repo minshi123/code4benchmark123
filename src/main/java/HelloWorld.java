@@ -16,6 +16,7 @@ public class HelloWorld {
     a.method(); // ok
   }
 
+  
   void mayCauseNPE() {
     Pointers.A a = Pointers.mayReturnNull(-10);
     a.method(); // defect 1
