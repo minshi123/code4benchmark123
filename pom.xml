@@ -15,7 +15,11 @@
     </dependency>
   </dependencies>
    
-  
+  <properties>
+    <sonar.projectKey>dreaminplus_code4benchmark2</sonar.projectKey>
+    <sonar.organization>dreaminplus</sonar.organization>
+    <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+  </properties>
   <build>
     <pluginManagement>
       <plugins>
