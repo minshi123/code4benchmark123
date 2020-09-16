@@ -7,7 +7,7 @@ import java.io.OutputStream;
 
 
 public class HelloWorld {
-  void dummy() {
+  void dummy2() {
     // do nothing here
   }
 
