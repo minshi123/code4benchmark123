@@ -9,5 +9,6 @@ public class Pointers {
       return new A();
     }
     return null;
+    return null;
   }
 }
