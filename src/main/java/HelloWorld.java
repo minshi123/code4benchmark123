@@ -23,8 +23,6 @@ public class HelloWorld {
     a.method(); // ok
   }
 
-  void foobar(){
-  }
   
   void mayCauseNPE() {
     Pointers.A a = Pointers.mayReturnNull(-10);
