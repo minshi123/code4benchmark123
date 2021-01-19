@@ -10,6 +10,13 @@ public class HelloWorld {
   void dummy() {
     // do nothing here
   }
+  String bar(){
+    return null;
+  }
+  
+  void causeNPE(){
+    bar().length();
+  }
 
   void doesNotCauseNPE() {
     Pointers.A a = Pointers.mayReturnNull(10);

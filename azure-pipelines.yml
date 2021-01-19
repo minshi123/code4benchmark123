@@ -1,7 +1,9 @@
-# Maven123
-# Build your Java project and run tests with Apache Maven.
+
+# Maven
+# Build your Java project and run tests with Apache Maven. 123
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/java
+
 
 trigger:
 - master
@@ -20,3 +22,7 @@ steps:
     publishJUnitResults: true
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
+- task: PublishPipelineArtifact@1
+  inputs:
+    targetPath: '$(Pipeline.Workspace)'
+    publishLocation: 'pipeline'
