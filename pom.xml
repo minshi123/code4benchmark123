@@ -3,6 +3,8 @@
   <groupId>com.huawei.demo</groupId>
   <artifactId>javaMavenDemo</artifactId>
  
+  
+  
   <packaging>jar</packaging>
   <version>1.0</version>
   <name>maven_demo</name>
